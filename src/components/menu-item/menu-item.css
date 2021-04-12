@@ -15,13 +15,14 @@
           justify-content: center;
   border: 1px solid black;
   margin: 0 7.5px 15px;
+  overflow: hidden;
 }
 
 .menu-item:hover {
   cursor: pointer;
 }
 
-.menu-item:hover.background-image {
+.menu-item:hover .background-image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -30,7 +31,7 @@
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
-.menu-item:hover.content {
+.menu-item:hover .content {
   opacity: 0.9;
 }
 
